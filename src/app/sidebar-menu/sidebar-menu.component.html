@@ -1,12 +1,79 @@
 <div class="sidebar-menu">
     <div class="brand">
+        <img src="../../assets/img/logo.png">
         <a>HOMELANDER</a>
     </div>
 
     <nav>
         <ul>
             <li>
-                <a>Produits</a>
+                <a routerLinkActive="active-link" routerLink="/dashboard">
+                    <fa-icon [icon]="faHouse"></fa-icon>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLinkActive="active-link" routerLink="/categories">
+                    <fa-icon [icon]="faHouse"></fa-icon>
+                    <span>Catégories</span>
+                </a>
+            </li>
+
+            <li class="products-bloc">
+                <div class="products" (click)="showHideProductMenu()">
+                    <fa-icon [icon]="faBox"></fa-icon>
+                    <span>Produits</span>
+                    <fa-icon [icon]="faAngleDown"></fa-icon>
+                </div>
+                <ul>
+                    <li>
+                        <a routerLinkActive="active-link" routerLink="/dresses">
+                            <fa-icon [icon]="faCaretRight"></fa-icon>
+                            <span>vêtements</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="active-link" routerLink="/shoes">
+                            <fa-icon [icon]="faCaretRight"></fa-icon>
+                            <span>Chaussures</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="active-link" routerLink="/accessories">                            
+                            <fa-icon [icon]="faCaretRight"></fa-icon>
+                            <span>Accessoires</span>    
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="active-link" routerLink="/decorations">                            
+                            <fa-icon [icon]="faCaretRight"></fa-icon>
+                            <span>Déco maison</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a routerLinkActive="active-link" routerLink="/orders">
+                    <fa-icon [icon]="faReceipt"></fa-icon>
+                    <span>Commandes</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLinkActive="active-link" routerLink="/customers">
+                    <fa-icon [icon]="faUser"></fa-icon>
+                    <span>Clients</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLinkActive="active-link" routerLink="/comments">
+                    <fa-icon [icon]="faUser"></fa-icon>
+                    <span>Commentaires</span>
+                </a>
             </li>
         </ul>
     </nav>

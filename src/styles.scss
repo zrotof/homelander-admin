@@ -20,6 +20,10 @@ div{
     -webkit-tap-highlight-color: transparent;
 }
 
+ul{
+    margin: 0;
+}
+
 //Removing background hightlight when autofill on google browser
 input:-webkit-autofill,
 input:-webkit-autofill:focus {

@@ -1,0 +1,87 @@
+.dashboard{
+    width: 80vw;
+    min-height: 100vh;
+    padding: 2% 4%;
+    flex-direction: column;
+
+    .globals{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        .global{
+            display: flex;
+            padding: 1%;
+            justify-content: space-between;
+            background-color: #ededed;
+            border-radius: 10px;
+            width: 23%;
+            height: 18vh;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+            .datas{
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    color:#767676;
+                }
+            }
+
+            .icon-bloc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+
+                fa-icon{
+                    font-size: 1.5em;            
+                }
+            }
+        }
+
+        .revenue{
+            .icon-bloc{
+                background-color: #1a9cd434;
+
+                fa-icon{
+                    color: #1a9cd4;
+                }
+            }
+        }
+
+        .orders{
+            .icon-bloc{
+                background-color: #00841d3c;
+
+                fa-icon{
+                    color: #00841d;
+                }
+            }
+        }
+
+        .customers{
+            .icon-bloc{
+                background-color: #71006238;
+
+                fa-icon{
+                    color: #710062;
+                }
+            }
+        }
+
+        .comments{
+            .icon-bloc{
+                background-color: #00000042;
+                fa-icon{
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+}
